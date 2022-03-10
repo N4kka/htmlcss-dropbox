@@ -1,3 +1,105 @@
-body {
-    background-color: aqua;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+/* TEST */
+/* /TEST */
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float {
+    float: left;
+}
+
+img {
+    width: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text{
+    font-size: .8em;
+    font-weight: 500;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+    margin-bottom: .2em;
+}
+
+.logo {
+width: 15%;
+line-height: 60px;
+}
+
+.login {
+    width: 10%;
+    line-height: 60px;
+} 
+
+.logo img {
+    vertical-align: text-bottom;
+    padding-right: 1em;
+}
+
+.first-menu,
+.second-menu {
+    width: 35%;
+}
+
+.menu li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0em 1em 0em .5em;
+}
+
+.first {
+    text-align: left;
+}
+
+.second {
+    text-align: right;
+}
+
+.login {
+    text-align: right;
+}
+
+.login a {
+    color: white;
+    background-color: blue;
+    padding: .5em 1em;
+}
+
+/* MAIN */
+.jumbotron {
+    height: 500px;
+    background-color: #b4d0e7;
 }
