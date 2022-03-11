@@ -63,6 +63,10 @@ a {
     padding: .5em 1em;
 } 
 
+section {
+    margin-bottom:5em;
+}
+
 /* HEADER */
 .fixed {
     width: 100%;
@@ -93,6 +97,10 @@ a {
     display: inline-block;
     line-height: 60px;
     padding: 0em 1em 0em .5em;
+}
+
+.menu a {
+    color: black;
 }
 
 .first {
@@ -166,8 +174,11 @@ a {
 /* 1° SECTION */
 .plans {
     margin-top: 7em;
-    margin-bottom: 1.5em;
-    background-color: aquamarine;
+    margin-bottom: 2em;
+}
+
+.billing {
+    padding-right: 1em;
 }
 
 .container .col {
@@ -244,4 +255,60 @@ a {
 
 .blue-check {
     color: #1d72fb;
+}
+
+.col .enterprise {
+    width: 1200px;
+    margin-top: 4em;
+}
+
+.r-float {
+    float: right;
+}
+
+.col .enterprise {
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 0em;
+    margin-bottom: 2em;
+}
+
+.col-align {
+    display: flex;
+
+}
+.ent-team {
+    border: 1px solid #ddd;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.ent-title {
+    margin-top: 2em;
+}
+
+.btn {
+    margin-top: 2em;
+    margin-left: 7em;
+}
+
+/* 2° SECTION */
+.container .partner {
+    width: calc(100%/2);
+    margin-right: 4em;
+}
+
+.partner-description h3 {
+    padding: 1em 0;    
+}
+
+.partner-description p {
+    padding-bottom: 1.5em;
+}
+
+.partner-description button {
+    padding: .5em 1em;
+    background-color: white;
 }
