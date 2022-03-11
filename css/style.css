@@ -16,16 +16,8 @@ html {
 
 
 .container {
-    width: 82%;
+    width: 70%;
     margin: 0 auto;
-}
-
-.container-2 {
-    width: 60%;
-    margin: 0 auto;
-    /* TEST */
-    height: 500px;
-    /* background-color: blueviolet; */
 }
 
 .clearfix {
@@ -44,12 +36,14 @@ img {
 
 ul {
     list-style: none;
-    border: 1px solid #ddd;
 }
 
 a {
     text-decoration: none;
-    color: black;
+}
+
+.col {
+    float: left;
 }
     
 .text{
@@ -57,34 +51,37 @@ a {
     font-weight: 500;
 }
 
-.col {
-    width: calc(100/3 - 30px);
-}
-
 .fas-color {
     color: lightgray;
 }
 
+.button {
+    width: 10%;
+    line-height: 60px;
+    color: white;
+    background-color: #1d72fb;
+    padding: .5em 1em;
+} 
+
 /* HEADER */
-header {
-    height: 60px;
-    margin-bottom: .2em;
+.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 .logo {
-width: 15%;
-line-height: 60px;
-}
-
-.login {
-    width: 10%;
+    width: 15%;
     line-height: 60px;
-} 
+}
 
 .logo img {
     width: 80%;
     vertical-align: text-bottom;
     padding-right: .5em;
+    margin-left: 1em;
 }
 
 .first-menu,
@@ -106,21 +103,31 @@ line-height: 60px;
     text-align: right;
 }
 
-.login {
-    text-align: right;
-}
-
-.button{
-    color: white;
-    background-color: #1d72fb;
-    padding: .5em 1em;
+.login a  {
+    margin-left: 5em;
 }
 
 /* MAIN */
 .jumbotron {
-    height: 60vh;
+    height: 550px;
     background-color: #b4d0e7;
-    padding: 4.2em 5em 0em;
+}
+
+.jumbotron-container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    bottom: -30%;
+}
+
+.left-col{
+    width: 40%;
+}
+
+.right-col {
+    width: 60%;
 }
 
 .jumbotron h1 {
@@ -152,17 +159,89 @@ line-height: 60px;
 
 .jumbotron-img img {
     margin-top: 2em;
-    width: 58%;
+    width: 65%;
     float: right;
 }
 
 /* 1° SECTION */
 .plans {
     margin-top: 7em;
+    margin-bottom: 1.5em;
     background-color: aquamarine;
 }
 
-.plan-type {
-    border: 1px solid gray;
+.container .col {
+    width: calc(100%/3 - 30px);
+}
+
+.container .col ul {
+    border: 1px solid #ddd;
+    margin-right: 3em;
+}
+
+.plans h2 {
+    padding-bottom: 2em;
+}
+
+.col .types p {
+    border: 1px solid #ddd;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 0em;
+    margin-bottom: 2em;
+}
+
+.col .plan-type {
+    border-collapse: separate;
     text-align: center;
+}
+
+.pl {
+    padding-left: 2em;
+}
+
+.types h3 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.list-color {
+    color: black;
+}
+
+.types .month {
+    margin-bottom: 2em;
+    margin-top: .2em;
+}
+
+.month-color {
+    padding-top: 0.2em;
+    font-size: .8em;
+    color: gray;
+}
+
+.pb {
+    padding-bottom: 1.5em;
+}
+
+.buy-now {
+    color: #1d72fb;
+    text-decoration: underline;
+}
+
+.bb {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2em;
+}
+
+.mb-2 {
+    margin-bottom:  3em;
+}
+
+.blue-check {
+    color: #1d72fb;
 }
